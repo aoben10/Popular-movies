@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/cont_custom_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/padding_default"
+                android:elevation="2dp"
+                android:outlineProvider="bounds">
+
+    <ImageView
+        android:id="@+id/im_movie_poster_icon"
+        android:layout_width="100dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="18dp"
+        android:contentDescription="@string/movie_poster_image"
+        android:src="@drawable/im_image_shutter"/>
+
+
+    <RatingBar
+        android:id="@+id/ic_movie_ratings"
+        style="@style/CustomRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/im_movie_poster_icon"
+        android:layout_marginLeft="26dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:paddingTop="3dp"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:stepSize="0.1"/>
+
+    <TextView
+        android:id="@+id/tv_num_votes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ic_movie_ratings"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="9dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:singleLine="true"
+        android:textColor="@color/secondary_text"
+        android:textSize="12sp"
+        tools:text="36 votes"/>
+
+
+    <TextView
+        android:id="@+id/tv_movie_title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/im_movie_poster_icon"
+        android:layout_alignTop="@+id/im_movie_poster_icon"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="5dp"
+        android:singleLine="true"
+        android:textSize="20sp"
+        android:textColor="@color/primary_text"
+        tools:text="Jason Bourne"/>
+
+    <TextView
+        android:id="@+id/tv_release_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_movie_title2"
+        android:layout_below="@+id/tv_movie_title2"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:paddingTop="@dimen/padding_between_strings"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/text_size_15"
+        tools:text="(10-02-16)"/>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_movie_title2"
+        android:layout_below="@+id/tv_release_date"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:paddingTop="@dimen/padding_between_strings"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/text_size_15"
+        tools:text="In Production"/>
+
+
+    <TextView
+        android:id="@+id/tv_runtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_movie_title2"
+        android:layout_below="@+id/tv_status"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:paddingTop="@dimen/padding_between_strings"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/text_size_15"
+        tools:text="103 mins"/>
+
+    <TextView
+        android:id="@+id/tv_tagline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_movie_title2"
+        android:layout_below="@+id/tv_runtime"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:paddingTop="@dimen/padding_between_strings"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/text_size_15"
+        android:textStyle="italic"
+        tools:text="You know his name"/>
+
+
+    <TextView
+        android:id="@+id/tv_prod_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_movie_title2"
+        android:layout_below="@+id/tv_tagline"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:paddingTop="@dimen/padding_between_strings"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/text_size_13"
+        tools:text="Canada"/>
+
+    <TextView
+        android:id="@+id/tv_prod_companies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_movie_title2"
+        android:layout_below="@+id/tv_prod_country"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:paddingTop="@dimen/padding_country_string"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/text_size_13"
+        tools:text="Warner Brothers"/>
+
+    <TextView
+        android:id="@+id/tv_genres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_movie_title2"
+        android:layout_below="@+id/tv_prod_companies"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:paddingTop="15dp"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/text_size_13"
+        tools:text="Action"/>
+
+</RelativeLayout>

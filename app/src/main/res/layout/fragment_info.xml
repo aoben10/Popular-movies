@@ -1,0 +1,42 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_vertical"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/im_movie_backdrop"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:contentDescription="@string/movie_backdrop_image"
+            android:orientation="horizontal"
+            android:scaleType="fitCenter"
+            android:src="@drawable/im_image_shutter"/>
+
+
+        <include
+            android:id="@+id/layout_below_image"
+            layout="@layout/movie_details_display"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <include
+            android:id="@+id/layout_below_details_display"
+            layout="@layout/grid_rec_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="15dp"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+

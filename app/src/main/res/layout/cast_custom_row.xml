@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cont_cast_custom_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_state_drawable">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignLeft="@+id/tv_cast_member"
+        android:layout_marginTop="80dp"
+        android:background="@color/divider"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/im_profile_image"
+        android:layout_width="40dp"
+        android:layout_height="44dp"
+        android:layout_alignTop="@+id/tv_cast_member"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:src="@drawable/im_image_shutter"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="1dp"/>
+
+    <TextView
+        android:id="@+id/tv_cast_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_text"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:singleLine="true"
+        android:text="@string/cast_member"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_cast_role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_cast_member"
+        android:layout_below="@+id/tv_cast_member"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:text="@string/cast_member_role"
+        android:textColor="@color/secondary_text"
+        android:textSize="14sp"/>
+
+
+</RelativeLayout>

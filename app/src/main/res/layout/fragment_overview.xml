@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:paddingTop="@dimen/activity_horizontal_margin"
+             android:paddingBottom="@dimen/activity_vertical_margin"
+             android:paddingLeft="@dimen/activity_vertical_margin"
+             android:paddingRight="@dimen/activity_vertical_margin"
+             tools:context="com.snoop.movies.fragments.OverviewFragment">
+
+    <TextView
+        android:id="@+id/tv_movie_overview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/primary_text"
+        android:lineSpacingExtra="@dimen/text_line_spacing"
+        tools:text= "Movie overview goes here"/>
+
+</FrameLayout>

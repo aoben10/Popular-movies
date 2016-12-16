@@ -1,0 +1,56 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                    xmlns:tools="http://schemas.android.com/tools"
+                                    android:id="@+id/cont_card_view"
+                                    android:layout_width="135dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="16dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:background="@color/icons"
+                                    card_view:cardCornerRadius="3dp"
+                                    card_view:cardUseCompatPadding="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/im_movie_poster_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:contentDescription="@string/action_settings"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_central_poster"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:maxLines="2"
+            android:layout_below="@+id/im_movie_poster_icon"
+            android:background="@color/icons"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="4dp"
+            android:textColor="@color/primary_text"
+            android:paddingLeft="8dp"
+            android:paddingTop="6dp"
+            android:textSize="12sp"
+            tools:text="Miss Peregrine's Home for Peculiar Children"/>
+
+        <TextView
+            android:id="@+id/tv_release_date"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/tv_title"
+            android:background="@color/icons"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="4dp"
+            android:textSize="10sp"
+            tools:text="2016"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
