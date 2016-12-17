@@ -28,6 +28,9 @@ Related Movies CardView                                                         
 :-------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------:
 <img src="screenshots/movies_screenshot3.png" alt="Drawing"  width="360" height="640"/> |  <img src="screenshots/movies_screenshot4.png" alt="Drawing"  width="360" height="640"/>
 
+## Video Preview
+<img src="screenshots/capturemov2.gif" alt="Drawing"  width="360" height="640"/> 
+
 ## Libraries Used
 
 ###View Binding
