@@ -24,7 +24,7 @@ The following **required** functionality is completed
 <img src="screenshots/movies_screenhot2.png" alt="Drawing"  width="360" height="640"/> |  <img src="screenshots/movies_screenshot1.png" alt="Drawing"  width="360" height="640"/>
 
 
-Related Movies CardView                                                                 |  Cast ViewPager
+Related Movies CardView                                                          |  Cast ViewPager
 :-------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------:
 <img src="screenshots/movies_screenshot3.png" alt="Drawing"  width="360" height="640"/> |  <img src="screenshots/movies_screenshot4.png" alt="Drawing"  width="360" height="640"/>
 
