@@ -3,6 +3,8 @@ Project: Android application to explore popular, recent and top movies.
 
 Created using [The Movie Database API.](https://www.themoviedb.org/?language=en)
 
+**Full video preview** http://youtu.be/W7lWzTbGAXs
+
 ## Features
 The following **required** functionality is completed
 - [x] User can view popular, now playing, recent and top rated movies.
