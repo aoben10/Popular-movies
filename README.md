@@ -33,13 +33,13 @@ Related Movies CardView                                                         
 
 ## Libraries Used
 
-###View Binding
+### View Binding
 [ButterKnife](https://jakewharton.github.io/butterknife/)
 
-###API Requests
+### API Requests
 [Retrofit](https://square.github.io/retrofit/)
 
-###Image Loading
+### Image Loading
 [Picasso](https://square.github.io/picasso/)
 
 
